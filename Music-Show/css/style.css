@@ -1,0 +1,133 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.btn {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  text-decoration: none;
+  color: black;
+  background-color: white;
+}
+
+ul {
+  list-style: none;
+}
+
+img {
+  width: 100%;
+}
+
+body {
+  background-image: url("../images/bg.jpg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+  font-size: 1.6rem;
+}
+body header {
+  background-color: #b80000;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.4rem;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  margin-bottom: 1.5rem;
+}
+body header h1 {
+  font-family: "Pushster", cursive;
+  color: black;
+  font-size: 8rem;
+}
+body header nav ul {
+  display: flex;
+  gap: 1.4rem;
+  margin-top: 3rem;
+}
+body header nav ul li a {
+  padding-top: 260%;
+  padding-left: 0.5rem;
+  padding-right: 0.5em;
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+  background-color: black;
+}
+body header nav ul img {
+  width: 3rem;
+  border: 3px solid black;
+  border-radius: 50%;
+}
+body main {
+  background-color: black;
+  padding: 2rem 2rem 2rem 0rem;
+}
+body main .hero-text {
+  display: flex;
+}
+body main .hero-text .hero-subtext {
+  display: flex;
+  flex-direction: column;
+}
+body main .hero-text .hero-subtext p {
+  text-align: justify;
+}
+body main .hero-text .hero-subtext h2 {
+  align-self: flex-end;
+  background-color: white;
+  color: black;
+  font-family: "Pushster", cursive;
+  text-align: left;
+  padding: 0.6rem;
+  width: 25%;
+  font-size: 3rem;
+  margin-bottom: 1.5rem;
+}
+body main .hero-text img {
+  width: 40%;
+}
+body main .grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 0.7rem;
+}
+body main .grid .box {
+  border-right: 1px solid white;
+  margin-top: 2rem;
+}
+body main .grid .box:last-child {
+  border-right: none;
+}
+body main .grid .box h3 {
+  background-color: #b80000;
+  font-family: "Pushster", cursive;
+  color: white;
+  padding: 0.7rem;
+  text-align: left;
+  margin-bottom: 1rem;
+}
+body footer {
+  display: flex;
+  gap: 1rem;
+  background-color: white;
+  padding: 0.8rem;
+  border-radius: 10px;
+  margin-top: 1.5rem;
+}
+body footer img {
+  width: 3rem;
+}
+
+/*# sourceMappingURL=style.css.map */

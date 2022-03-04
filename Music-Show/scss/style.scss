@@ -1,0 +1,148 @@
+$crvena: rgb(184, 0, 0);
+$radius: 10px;
+$padd-text: 2rem;
+$font: "Pushster", cursive;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.btn {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  text-decoration: none;
+  color: black;
+  background-color: white;
+}
+
+ul {
+  list-style: none;
+}
+
+img {
+  width: 100%;
+}
+
+body {
+  background-image: url("../images/bg.jpg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+  font-size: 1.6rem;
+
+  header {
+    background-color: $crvena;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.4rem;
+    border-bottom-left-radius: $radius;
+    border-bottom-right-radius: $radius;
+    margin-bottom: 1.5rem;
+    h1 {
+      font-family: $font;
+      color: black;
+      font-size: 8rem;
+    }
+    nav {
+      ul {
+        display: flex;
+        gap: 1.4rem;
+        margin-top: 3rem;
+        li a {
+          padding-top: 260%;
+          padding-left: 0.5rem;
+          padding-right: 0.5em;
+          border-bottom-left-radius: 30px;
+          border-bottom-right-radius: 30px;
+          background-color: black;
+        }
+        img {
+          width: 3rem;
+          border: 3px solid black;
+          border-radius: 50%;
+        }
+      }
+    }
+  }
+
+  main {
+    background-color: black;
+    padding: $padd-text $padd-text $padd-text 0rem;
+    .hero-text {
+      display: flex;
+
+      .hero-subtext {
+        display: flex;
+        flex-direction: column;
+
+        p {
+          text-align: justify;
+        }
+        h2 {
+          align-self: flex-end;
+
+          background-color: white;
+          color: black;
+          font-family: $font;
+          text-align: left;
+          padding: 0.6rem;
+          width: 25%;
+          font-size: 3rem;
+          margin-bottom: 1.5rem;
+        }
+      }
+
+      img {
+        width: 40%;
+      }
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      column-gap: 0.7rem;
+      .box {
+        border-right: 1px solid white;
+        margin-top: 2rem;
+
+        &:last-child {
+          border-right: none;
+        }
+        h3 {
+          background-color: $crvena;
+          font-family: $font;
+          color: white;
+          padding: 0.7rem;
+          text-align: left;
+          margin-bottom: 1rem;
+        }
+      }
+    }
+  }
+
+  footer {
+    display: flex;
+    gap: 1rem;
+
+    background-color: white;
+    padding: 0.8rem;
+    border-radius: $radius;
+    margin-top: 1.5rem;
+    img {
+      width: 3rem;
+    }
+  }
+}
